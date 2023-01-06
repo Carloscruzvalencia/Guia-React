@@ -6,9 +6,13 @@
 1. Primero instala ```NPM```
    - [Link a la pagina web de Node.js](https://nodejs.org/es/) 
    - Descarga la version ```LTS``` (Long Term Support) o (Last Stable version)
-2. En la terminal ```CMD``` (Windows + X despues presionamos A) ponemos el siguiente codigo
+2. En la terminal ```CMD``` (Windows + X despues presionamos A) ponemos el siguiente codigo asegurate de estar en la carpeta del proyecto.
     - ```npx create-react-app``` nombreDeNuestroProyecto
-3. third
+3. Como iniciar React
+    - En la terminal ponemos el siguiente codigo
+    ``` npm run start```
+
+    - Tenemos otros escripts pero para probar que funciona utilizaremos este 
 
 
 
