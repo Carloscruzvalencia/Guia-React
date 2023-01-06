@@ -81,7 +81,22 @@ import React from 'react;
     ```html 
     <myNewApp/>
     ```
- 
+## ADDING CSS TO THE PROJECT
+1. Creating the css file
+   - In the ```SRC folder``` I recomend you to create a ```Styles folder``` and then create the ```custom.css``` file.
+2. Import the css file to the project/component ```is the same way in both cases```.
+   ```javascript 
+   impot 'css src path';
+   ```
+3. Warnings
+   - css ```html clases``` in javascript is redered diferent
+        ```javascript 
+        <div class="main-div"></div> this gives a explorer error on the console
+        ```
+    - The correct way to do it is ```changin class to className```
+        ```javascript
+        <div className="main-div"></div>
+        ```
 ## Atomic Desing Methodology
 ![atomic desing image example](assets/AtomicDesingReact.png)
 
