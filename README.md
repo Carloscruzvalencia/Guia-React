@@ -10,19 +10,78 @@
     - ```npx create-react-app``` nombreDeNuestroProyecto
 3. Como iniciar React
     - En la terminal ponemos el siguiente codigo
-    ``` npm run start```
+    ```npm run start```
 
     - Tenemos otros escripts pero para probar que funciona utilizaremos este 
 
-
-
-
 </details>
 
+## Folder structure
+1. node_modules
+   - todo los componentes de node instalados al ejecutar npx 
+2. public
+   - ```contiene archivos estáticos``` como index. html, archivos de librerías javascript, imágenes, y otros activos, etc. ```que no quieres que sean procesados por webpack```
+   - Tambien ```contiene el archivo index.html``` que es el archivo ```donde se renderiza todos nuestros componentes y codigo``` que hemos creador.
+3. src 
+   - todos los archivos con los que trabajamos y creamos nuestra aplicacion web
 
+## CLASS Y FUNCTION
 
+Function type
+```javascript
+    function app(){
+        return(
+            // html component & app 
+        )
+    }
+```
+class type 
+```javascript
+import React from 'react;
 
+    class App extends React.component {
+        render(){
+            return (
+                // html component & app 
+            );
+        }
+    }
+```
+## CLASS VS HOOKS
 
+## CREATING A COMPONENT 
+ 1. Creating the component
+      - In the ```SRC``` folder whe create a new ```newComponent.js``` file 
+ 2. Inside the new component file
+    - You need to import the react component
+        ```javascript
+        import react, {component} from 'react;
+        ```
+    - the component code sintax 
+        ```javascript
+        class "app name" extends Component {
+            render(){
+                return (
+                    <!-- html compoenent content  -->
+                );
+            }
+        }
+        ```
+        
+ 3. The export method
+    ```javascript 
+    export default appName
+    ```
+4. Rendering the component
+   - In the ```index.js in src folder``` whe need to put our new componet 
+    ```javascript 
+    ReactDOM.render("Put your new component here" ,document.getElementById('root));
+    ```
+    - Remenber is a ```Self cosing tag```, javascript will undesrtand it an he would render the new component
+    ```html 
+    <myNewApp/>
+    ```
+ 
 ## Atomic Desing Methodology
 ![atomic desing image example](assets/AtomicDesingReact.png)
 
@@ -47,5 +106,3 @@
 
 ### PAGINAS
 - Las páginas son ```instancias específicas de plantillas que muestran el aspecto de una interfaz de usuario con contenido representativo real.```
-   
-
