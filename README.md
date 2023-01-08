@@ -59,7 +59,7 @@ import React from 'react;
         ```
     - the component code sintax 
         ```javascript
-        class "app name" extends Component {
+        class "appName" extends Component {
             render(){
                 return (
                     <!-- html compoenent content  -->
@@ -97,6 +97,18 @@ import React from 'react;
         ```javascript
         <div className="main-div"></div>
         ```
+## REACT PROPS
+1. Prop is properties of an element in ```app.js```
+   ```javascript 
+   ReactDOM.render(<miApp customProp = {'This is mi custom properti'}/>)
+   ```
+2. In the component 
+    ```html  
+    <div>
+        <p>{this.props.customProp}</p>
+    </div>
+    ```
+
 ## Atomic Desing Methodology
 ![atomic desing image example](assets/AtomicDesingReact.png)
 
