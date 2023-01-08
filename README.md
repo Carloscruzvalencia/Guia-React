@@ -51,15 +51,15 @@ import React from 'react;
 
 ## CREATING A COMPONENT 
  1. Creating the component
-      - In the ```SRC``` folder whe create a new ```newComponent.js``` file 
+      - In the ```SRC``` folder whe create a new ```newComponent.js``` file ```always start the component name witch unppercase``` 
  2. Inside the new component file
     - You need to import the react component
         ```javascript
-        import react, {component} from 'react;
+        import react from 'react;
         ```
     - the component code sintax 
         ```javascript
-        class "appName" extends Component {
+        class "AppName" extends Component {
             render(){
                 return (
                     <!-- html compoenent content  -->
@@ -70,16 +70,21 @@ import React from 'react;
         
  3. The export method
     ```javascript 
-    export default appName
+    export default AppName
     ```
 4. Rendering the component
    - In the ```index.js in src folder``` whe need to put our new componet 
     ```javascript 
-    ReactDOM.render("Put your new component here" ,document.getElementById('root));
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(
+        <React.StrictMode>
+          put your compoenent here this way => <appName/>
+        </React.StrictMode>
+        );
     ```
-    - Remenber is a ```Self cosing tag```, javascript will undesrtand it an he would render the new component
+    - Remember is a ```Self cosing tag```, javascript will undesrtand it an he would render the new component
     ```html 
-    <myNewApp/>
+    <AppName/>
     ```
 ## ADDING CSS TO THE PROJECT
 1. Creating the css file
@@ -108,7 +113,34 @@ import React from 'react;
         <p>{this.props.customProp}</p>
     </div>
     ```
-
+## REACT DEPLOYMENT TO GITHUB
+ 1. first install the ```gh-pages``` npm package
+    ```shell
+    npm install -g gh-pages
+    ```
+    - Note the -g to make a global installation to use it in other projects not only in this project
+ 2. In package.json create a home page
+    ```json 
+        {
+          "name": "my-app",
+          "version": "0.1.0",
+          + "homepage": "https://YourUserName.github.io/yourRepoName", 
+          "private": true,
+    ```
+ 3. Create ```create deploy scripts```
+    ```json
+    "scripts": {
+      +   "predeploy": "npm run build",
+      +   "deploy": "gh-pages -d build",
+          "start": "react-scripts start",
+          "build": "react-scripts build",
+    ```
+4. Ready to deploy
+    ```json 
+    npm run deploy
+    ```
+5. github you need to change the gh pages source ```from master``` to ```gh-pages branch```
+   ![gh-pages-settings](assets/gh-pages.png)
 ## Atomic Desing Methodology
 ![atomic desing image example](assets/AtomicDesingReact.png)
 
