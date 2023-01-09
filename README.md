@@ -1,29 +1,30 @@
-# Guia-React
+# Guide-React
 
 <details open>
-<summary>⚙️ Instalacion de React ⚙️</summary>
+<summary>⚙️ Installing React ⚙️</summary>
 
-1. Primero instala ```NPM```
-   - [Link a la pagina web de Node.js](https://nodejs.org/es/) 
-   - Descarga la version ```LTS``` (Long Term Support) o (Last Stable version)
-2. En la terminal ```CMD``` (Windows + X despues presionamos A) ponemos el siguiente codigo asegurate de estar en la carpeta del proyecto.
-    - ```npx create-react-app``` nombreDeNuestroProyecto
-3. Como iniciar React
-    - En la terminal ponemos el siguiente codigo
-    ```npm run start```
+1. First install ``NPM``.
+   - [Link to Node.js web page](https://nodejs.org/es/) 
+   - Download the (Long Term Support) or (Last Stable version)
+2. In the terminal ```CMD``` (Windows + X then press A) put the following code make sure you are in the project folder.
+    - ```npx create-react-app projectName``` 
+3. How to start React
+    - In the terminal we put the following code
 
-    - Tenemos otros escripts pero para probar que funciona utilizaremos este 
+        ````npm run start````
+
+    - We have other scripts but to test that it works we will use this one 
 
 </details>
 
 ## Folder structure
 1. node_modules
-   - todo los componentes de node instalados al ejecutar npx 
+   - all node components installed when running npx 
 2. public
-   - ```contiene archivos estáticos``` como index. html, archivos de librerías javascript, imágenes, y otros activos, etc. ```que no quieres que sean procesados por webpack```
-   - Tambien ```contiene el archivo index.html``` que es el archivo ```donde se renderiza todos nuestros componentes y codigo``` que hemos creador.
+   - ````contains static files```` such as index.html, javascript library files, images, and other assets, etc. ``` that you do not want processed by webpack```.
+    - It also ```contains the index.html which is the file ```where all our components and code that we have created are rendered.
 3. src 
-   - todos los archivos con los que trabajamos y creamos nuestra aplicacion web
+   - all the files with which we work and create our web application
 
 ## CLASS Y FUNCTION
 
